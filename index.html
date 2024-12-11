@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GreenPocket | Login</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+
+<body
+    class="bg-[#06120B] md:bg-gradient-to-br md:from-[#06120B] md:to-[#287849] flex flex-col md:flex-row md:items-center p-8 md:p-0 justify-center min-h-screen relative">
+    <img class="hidden md:block absolute bottom-0 left-0" src="/img/leaves.png" alt="Folhas decorativas">
+
+    <main class="flex-1 flex flex-col md:flex-row md:items-center justify-center md:gap-8">
+        <section class="flex-1 flex flex-col justify-center items-center text-center">
+            <img src="img/logo.png" alt="Logo do sistema GreenPocket" class="mb-4">
+            <p class="hidden md:block text-white text-xl">Gerencie suas Finanças de Forma Inteligente e Sustentável</p>
+        </section>
+
+        <section class="bg-[#07130C] min-w-[30%] md:min-h-screen flex flex-col justify-center md:p-8 rounded-lg shadow-lg">
+            <form>
+                <div class="flex flex-col mb-6">
+                    <label for="emailInput" class="text-white font-bold mb-2">E-mail</label>
+                    <input id="emailInput" type="email"
+                        class="p-2 border-2 rounded-lg bg-transparent placeholder:text-[#41584A] text-[#41584A] border-[#41584A] focus:bg-[#040C07] focus:outline-[#01B876]"
+                        placeholder="user@email.com" />
+                </div>
+
+                <div class="flex flex-col mb-6">
+                    <label for="passwordInput" class="text-white font-bold mb-2">Senha</label>
+                    <input id="passwordInput" type="password"
+                        class="p-2 border-2 rounded-lg bg-transparent placeholder:text-[#41584A] text-[#41584A] border-[#41584A] focus:bg-[#040C07] focus:outline-[#01B876]"
+                        placeholder="******" />
+                </div>
+
+                <a href="/esqueceu-senha.html" class="text-white hover:text-[#01B876] ease-in duration-300 mb-6 block text-right">
+                    Esqueceu a senha?
+                </a>
+
+                <button type="submit"
+                    class="p-2 mb-6 w-full text-white font-bold rounded-lg bg-gradient-to-r from-[#005235] via-[#01B876] to-[#005235] hover:brightness-75 transition-all duration-300">
+                    Entrar
+                </button>
+
+                <a href="/cadastro.html" class="block mb-6 text-white text-center hover:brightness-75 transition-all duration-300">
+                    Ainda não possui uma conta?
+                    <span class="font-bold text-[#01B876]">Cadastre-se</span>
+                </a>
+            </form>
+
+            <div class="flex flex-col gap-3">
+                <button
+                    class="flex items-center justify-center gap-2 p-2 text-white font-bold rounded-lg border-2 hover:brightness-75 transition-all duration-300">
+                    <i class="bi bi-facebook" aria-hidden="true"></i>
+                    Entrar com Facebook
+                </button>
+                <button
+                    class="flex items-center justify-center gap-2 p-2 text-white font-bold rounded-lg border-2 hover:brightness-75 transition-all duration-300">
+                    <i class="bi bi-google" aria-hidden="true"></i>
+                    Entrar com Google
+                </button>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>
